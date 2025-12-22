@@ -28,20 +28,3 @@ dpv-areas/
 └── README.md
 ```
 
-## Entorno
-
-El proyecto utiliza **uv** para la gestión de dependencias.
-
-```bash
-uv sync
-
-Nada más por ahora. Lo vamos a mejorar después.
-
----
-
-## 4.4 Test rápido: ¿el entorno funciona desde VS Code?
-
-Abrí la terminal integrada de VS Code (`Ctrl + ñ`) y corré:
-
-```bash
-uv run python --version
