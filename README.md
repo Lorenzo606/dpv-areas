@@ -2,21 +2,28 @@
 
 **Clasificación automática de trámites digitales mediante Inteligencia Artificial**
 
-Sistema de clasificación automática de notas digitales a partir del campo **Asunto**, con el objetivo de derivar cada trámite al área administrativa correspondiente.
+Sistema de clasificación automática de notas digitales a partir del campo **Asunto**, con el objetivo de derivar cada trámite al área correspondiente.
 
 El sistema se aplica al proceso de ingreso de trámites en la **Mesa de Entradas (SUAC)** de la Dirección de Vivienda de la Provincia de Córdoba.
 
-El proyecto implementa un pipeline de inferencia basado en un modelo de lenguaje, respaldado por un conjunto de experimentos comparativos documentados.
-
 ![Pipeline de clasificación de asuntos](docs/images/esquema_general.png)
 *Esquema general Mesa de Entrada.*
-
 
 ---
 
 ## Objetivo
 
 Clasificar automáticamente los asuntos de notas digitales y asignarlos al área administrativa correspondiente, reduciendo errores de derivación y tiempos de procesamiento manual.
+
+---
+
+### Pipeline de la solución propuesta
+
+El proyecto implementa un pipeline de inferencia basado en un modelo de lenguaje, respaldado por un conjunto de experimentos comparativos documentados.
+
+![Pipeline de la solución de clasificación](docs/images/pipeline_clasificacion_tramites.png)
+
+*Pipeline de inferencia basado en modelos de lenguaje para la clasificación automática de trámites.*
 
 ---
 
@@ -64,9 +71,7 @@ El comando devuelve el área asignada al asunto.
 
 ## Documentación
 
-La documentación técnica y metodológica del proyecto se encuentra en el directorio `docs/`, donde se detallan:
-
-- Arquitectura del sistema
+La documentación técnica y metodológica del proyecto se encuentra en el directorio `docs/`, donde se detalla la arquitectura del sistema.
 
 ## Estado del proyecto
 
