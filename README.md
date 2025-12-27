@@ -1,17 +1,22 @@
 # dpv-areas
 
-Sistema de clasificación automática de asuntos administrativos por área,
-utilizando Inteligencia Artificial.
+**Clasificación automática de trámites digitales mediante Inteligencia Artificial**
 
-El proyecto implementa un pipeline de inferencia basado en modelos de lenguaje,
-respaldado por un conjunto de experimentos comparativos documentados.
+Sistema de clasificación automática de notas digitales a partir del campo **Asunto**, con el objetivo de derivar cada trámite al área administrativa correspondiente.
+
+El sistema se aplica al proceso de ingreso de trámites en la **Mesa de Entradas (SUAC)** de la Dirección de Vivienda de la Provincia de Córdoba.
+
+El proyecto implementa un pipeline de inferencia basado en un modelo de lenguaje, respaldado por un conjunto de experimentos comparativos documentados.
+
+![Pipeline de clasificación de asuntos](docs/images/esquema_general.png)
+*Esquema general Mesa de Entrada.*
+
 
 ---
 
 ## Objetivo
 
-Clasificar automáticamente el texto del asunto de un trámite administrativo
-y asignarlo al área correspondiente dentro de una organización pública.
+Clasificar automáticamente los asuntos de notas digitales y asignarlos al área administrativa correspondiente, reduciendo errores de derivación y tiempos de procesamiento manual.
 
 ---
 
@@ -27,4 +32,45 @@ dpv-areas/
 ├── pyproject.toml  # Definición del proyecto y dependencias
 └── README.md
 ```
+
+## Uso básico
+
+### Instalación del entorno
+
+El proyecto utiliza **uv** para la gestión del entorno y las dependencias.
+
+```bash
+uv sync
+```
+Este comando crea el entorno virtual e instala todas las dependencias definidas en `pyproject.toml`.
+
+### Configuración
+
+Crear el archivo `.env` a partir del ejemplo:
+
+```bash
+cp .env.example .env
+```
+
+y definir las claves de API correspondientes.
+
+### Ejecución de ejemplo
+
+```bash
+uv run python -m app.dpv_areas.cli --asunto "CAMBIO DE TITULARIDAD PARA ADJUDICATARIOS"
+```
+
+El comando devuelve el área asignada al asunto.
+
+## Documentación
+
+La documentación técnica y metodológica del proyecto se encuentra en el directorio `docs/`, donde se detallan:
+
+- Arquitectura del sistema
+
+## Estado del proyecto
+
+Versión actual: **v0**
+
+Pipeline funcional, experimentos documentados y resultados agregados.
 
