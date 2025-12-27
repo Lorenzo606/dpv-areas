@@ -1,0 +1,13 @@
+{
+    "accuracy": 0.9226519337016574,
+    "classification_report": "                         precision    recall  f1-score   support\n\n         ADMINISTRACION       0.87      0.93      0.90        42\n        ESCRITURACIONES       0.95      0.97      0.96        75\n     GESTION FINANCIERA       0.97      0.91      0.94       152\n               JURIDICO       0.67      1.00      0.80         8\n       MESA DE ENTRADAS       0.92      0.69      0.79        51\nREGULARIZACION DOMINIAL       0.91      0.97      0.94       211\n                TECNICA       1.00      1.00      1.00         4\n\n               accuracy                           0.92       543\n              macro avg       0.90      0.92      0.90       543\n           weighted avg       0.93      0.92      0.92       543\n",
+    "parametros_modelo": {
+        "tipo": "Clasificador LLM - OpenAI - Base",
+        "descripción": "API de OpenAi, Asunto y propmt con la descripcion de las Areas",
+        "modelo": "gpt-4.1-mini",
+        "instrucciones_especiales": true,
+        "jerarquia_reglas": false,
+        "cantidad_asuntos": 543
+    },
+    "descripcion": "\nAPI de OpenAi, Asunto y propmt con la descripcion de las Areas\n"
+}

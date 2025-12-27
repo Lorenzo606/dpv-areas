@@ -1,0 +1,21 @@
+{
+    "accuracy": 0.8623853211009175,
+    "classification_report": "                         precision    recall  f1-score   support\n\n         ADMINISTRACION       1.00      0.62      0.77         8\n        ESCRITURACIONES       0.88      1.00      0.94        15\n     GESTION FINANCIERA       0.86      0.97      0.91        31\n               JURIDICO       0.00      0.00      0.00         2\n       MESA DE ENTRADAS       0.62      0.50      0.56        10\nREGULARIZACION DOMINIAL       0.89      0.93      0.91        42\n                TECNICA       0.00      0.00      0.00         1\n\n               accuracy                           0.86       109\n              macro avg       0.61      0.57      0.58       109\n           weighted avg       0.84      0.86      0.84       109\n",
+    "parametros_modelo": {
+        "tipo": "LogisticRegression_multinomial",
+        "descripcion": "Regresión logística entrenada sobre embeddings de OpenAI",
+        "modelo": "ML_LogReg_OpenAI_Embeddings_v1",
+        "multi_class": "multinomial",
+        "max_iter": 1000,
+        "C": 1.0,
+        "penalty": "l2",
+        "solver": "lbfgs",
+        "test_size": 0.2,
+        "estrategia_split": "train_test_split estratificado por área",
+        "cantidad_asuntos_total": 109,
+        "cantidad_asuntos_train": 434,
+        "cantidad_asuntos_test": 109,
+        "cantidad_areas": 7
+    },
+    "descripcion": "\nExperimento de clasificación de asuntos utilizando regresión logística\nentrenada sobre embeddings generados con la API de OpenAI.\n\nModelo:\n- ML_LogReg_OpenAI_Embeddings_v1\n\nEstrategia:\n- Se generan embeddings de cada asunto con la API de OpenAI.\n- Se arma una matriz X (n_muestras x dim_embedding).\n- Se entrena una regresión logística multinomial.\n- Evaluación sobre un 20% de los datos (test) estratificado por área.\n\nDatos:\n- Total de asuntos: 109\n- Asuntos de entrenamiento: 434\n- Asuntos de test: 109\n- Cantidad de áreas: 7\n"
+}

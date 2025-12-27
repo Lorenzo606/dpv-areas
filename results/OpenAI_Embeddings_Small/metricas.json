@@ -1,0 +1,13 @@
+{
+    "accuracy": 0.7440147329650092,
+    "classification_report": "                         precision    recall  f1-score   support\n\n         ADMINISTRACION       0.55      0.55      0.55        42\n        ESCRITURACIONES       0.71      0.96      0.82        75\n     GESTION FINANCIERA       0.92      0.66      0.77       152\n               JURIDICO       1.00      0.38      0.55         8\n       MESA DE ENTRADAS       0.69      0.22      0.33        51\nREGULARIZACION DOMINIAL       0.72      0.92      0.81       211\n                TECNICA       0.33      0.25      0.29         4\n\n               accuracy                           0.74       543\n              macro avg       0.70      0.56      0.59       543\n           weighted avg       0.76      0.74      0.72       543\n",
+    "parametros_modelo": {
+        "tipo": "Clasificación por similitud de embeddings",
+        "descripción": "OpenAI Embeddings -- similitud coseno",
+        "modelo_embedding": "text-embedding-3-small",
+        "estrategia": "cosine_similarity asunto vs descripción de área",
+        "cantidad_asuntos": 543,
+        "cantidad_areas": 7
+    },
+    "descripcion": "\nExperimento usando OpenAI Embeddings (text-embedding-3-small).\nSe generan embeddings para cada asunto y para la descripción de cada área.\nSe clasifica por similitud coseno (top-1 y top-3).\n"
+}

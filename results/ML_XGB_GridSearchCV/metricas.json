@@ -1,0 +1,14 @@
+{
+    "accuracy": 0.8796296296296297,
+    "classification_report": "                         precision    recall  f1-score   support\n\n         ADMINISTRACION       0.89      1.00      0.94         8\n        ESCRITURACIONES       0.93      0.93      0.93        15\n     GESTION FINANCIERA       0.96      0.87      0.91        30\n               JURIDICO       0.00      0.00      0.00         2\n       MESA DE ENTRADAS       0.75      0.60      0.67        10\nREGULARIZACION DOMINIAL       0.85      0.98      0.91        42\n                TECNICA       0.00      0.00      0.00         1\n\n               accuracy                           0.88       108\n              macro avg       0.63      0.63      0.62       108\n           weighted avg       0.86      0.88      0.87       108\n",
+    "parametros_modelo": {
+        "tipo": "ML_XGB_GridSearchCV",
+        "descripción": "Entrenamos modelo ML -> XGBoost",
+        "modelo": "ML_XGB_GridSearchCV",
+        "estrategia": "ML_XGB_GridSearchCV",
+        "top_k": "-",
+        "cantidad_asuntos": 108,
+        "cantidad_areas": 7
+    },
+    "descripcion": "\nExperimento de clasificación utilizando ML_XGB_GridSearchCV.\n\nModelo:\n- ML_XGB_GridSearchCV\n\nEstrategia:\n- Buscamos mejor modelo: GridSearchCV\n- Entrenamos modelo de ML: XGBoost\n- 80% datos de entrenamiento y 20% datos de validación.\n\n"
+}

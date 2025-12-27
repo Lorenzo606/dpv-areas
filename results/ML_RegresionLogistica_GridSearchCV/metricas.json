@@ -1,0 +1,14 @@
+{
+    "accuracy": 0.8981481481481481,
+    "classification_report": "                         precision    recall  f1-score   support\n\n         ADMINISTRACION       0.89      1.00      0.94         8\n        ESCRITURACIONES       0.88      0.93      0.90        15\n     GESTION FINANCIERA       0.93      0.90      0.92        30\n               JURIDICO       0.00      0.00      0.00         2\n       MESA DE ENTRADAS       0.80      0.80      0.80        10\nREGULARIZACION DOMINIAL       0.91      0.95      0.93        42\n                TECNICA       0.00      0.00      0.00         1\n\n               accuracy                           0.90       108\n              macro avg       0.63      0.66      0.64       108\n           weighted avg       0.87      0.90      0.89       108\n",
+    "parametros_modelo": {
+        "tipo": "ML_LogisticRegression_GridSearchCV",
+        "descripción": "Entrenamos modelo ML -> Regresión Logistica",
+        "modelo": "LogisticRegression_GridSearchCV",
+        "estrategia": "LogisticRegression_GridSearchCV",
+        "top_k": "-",
+        "cantidad_asuntos": 108,
+        "cantidad_areas": 7
+    },
+    "descripcion": "\nExperimento de clasificación utilizando ML_LogisticRegression_GridSearchCV.\n\nModelo:\n- LogisticRegression_GridSearchCV\n\nEstrategia:\n- Buscamos mejor modelo: GridSearchCV\n- Entrenamos modelo de ML: Regresión Logistica\n- 80% datos de entrenamiento y 20% datos de validación.\n\n"
+}

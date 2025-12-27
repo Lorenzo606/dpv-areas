@@ -1,0 +1,17 @@
+{
+    "accuracy": 0.7108655616942909,
+    "classification_report": "                         precision    recall  f1-score   support\n\n         ADMINISTRACION       1.00      0.76      0.86        42\n        ESCRITURACIONES       0.98      0.69      0.81        75\n     GESTION FINANCIERA       0.84      0.88      0.86       152\n               JURIDICO       1.00      0.75      0.86         8\n       MESA DE ENTRADAS       0.60      0.06      0.11        51\nREGULARIZACION DOMINIAL       0.99      0.74      0.85       211\n         Sin clasificar       0.00      0.00      0.00         0\n                TECNICA       1.00      0.75      0.86         4\n\n               accuracy                           0.71       543\n              macro avg       0.80      0.58      0.65       543\n           weighted avg       0.91      0.71      0.78       543\n",
+    "parametros_modelo": {
+        "tipo": "clasificador_reglas_palabras_clave",
+        "descripcion": "Clasificador basado en conteo de palabras clave por área",
+        "modelo": "Reglas_PalabrasClave_v1",
+        "estrategia": "Coincidencias de palabras clave + selección de área con mayor puntaje",
+        "top_k": "no aplica",
+        "umbral_minimo_coincidencias": 1,
+        "cantidad_asuntos": 543,
+        "cantidad_areas_reales": 7,
+        "cantidad_areas_predichas": 8,
+        "sin_clasificar": 127
+    },
+    "descripcion": "\nExperimento de clasificación de asuntos utilizando reglas de palabras clave.\n\nModelo:\n- Reglas_PalabrasClave_v1\n\nEstrategia:\n- Normalizar texto (minúsculas, sin tildes).\n- Contar coincidencias de palabras clave por área.\n- Asignar el área con mayor cantidad de coincidencias si supera el umbral mínimo.\n- En caso contrario, clasificar como 'Sin clasificar' (si usás esa categoría).\n\nDatos:\n- Total de asuntos: 543\n- Áreas reales (ground truth): 7\n- Áreas predichas: 8\n"
+}
