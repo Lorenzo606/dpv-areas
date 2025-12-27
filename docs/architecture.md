@@ -29,6 +29,7 @@ Cada uno de estos bloques se implementa de forma desacoplada.
 ## Flujo del pipeline de clasificación
 
 El flujo completo del sistema es el siguiente:
+![Pipeline de la solución de clasificación](images/pipeline_clasificacion_tramites.png)
 
 1. **Ingreso del asunto**
    - El sistema recibe un texto correspondiente al asunto de un trámite administrativo.
